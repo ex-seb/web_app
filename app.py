@@ -3,16 +3,401 @@ import plotly.express as px
 import streamlit as st
 
 df = pd.read_csv("metro.csv")
-linea_a = df[df['linea'].str.contains('Linea A')]
 
-st.header('Afluencia de STC Metro en Ciudad de México durante Junio de 2024')
+linea_a = df[df['linea'] == ('Linea A')]
+linea_1 = df[df['linea'] == ('Linea 1')]
+linea_2 = df[df['linea'] == ('Linea 2')]
+linea_3 = df[df['linea'] == ('Linea 3')]
+linea_4 = df[df['linea'] == ('Linea 4')]
+linea_5 = df[df['linea'] == ('Linea 5')]
+linea_6 = df[df['linea'] == ('Linea 6')]
+linea_7 = df[df['linea'] == ('Linea 7')]
+linea_8 = df[df['linea'] == ('Linea 8')]
+linea_9 = df[df['linea'] == ('Linea 9')]
+linea_b = df[df['linea'] == ('Linea B')]
+linea_12 = df[df['linea'] == ('Linea 12')]
+
+
+st.header('Afluencia en STC Metro.')
+st.header('Ciudad de México, Junio 2024.')
+
+st.subheader('Línea 1', divider="pink")
 
 hist_checkbox = st.checkbox('Trazar un histograma')
 
 if hist_checkbox:
 
     st.write(
-        'Creación de un histograma para el conjunto de datos del metro en Ciudad de México')
+        'Creación de un histograma')
+
+    fig = px.histogram(linea_1, x="estacion", y='afluencia',
+                       labels={
+                           "estacion": "Estación",
+                           "afluencia": "Afluencia"
+                       }, title="Afluencia por estación")
+
+    st.plotly_chart(fig, use_container_width=True)
+
+scatter_checkbox = st.checkbox('Trazar un gráfico de dispersión')
+
+if scatter_checkbox:
+    st.write(
+        'Creación de un gráfico de dispersión')
+    fig = px.scatter(linea_1, x="estacion", y="afluencia", color="tipo_pago",
+                     labels={"estacion": "Estación",
+                             "afluencia": "Afluencia",
+                             "tipo_pago": "Tipo de Pago"},
+                     title="Tipo de pago por estación")
+    st.plotly_chart(fig, use_container_width=True)
+
+bar_checkbox = st.checkbox('Trazar un gráfico de barras')
+
+if bar_checkbox:
+    st.write(
+        'Creación de un gráfico de barras')
+    fig = px.bar(linea_1, x="estacion", y="afluencia", color="tipo_pago",
+                 labels={"estacion": "Estación",
+                         "afluencia": "Afluencia",
+                         "tipo_pago": "Tipo de Pago"},
+                 title="Tipo de pago por estación")
+    st.plotly_chart(fig, use_container_width=True)
+
+st.subheader('Línea 2', divider="blue")
+
+hist_checkbox = st.checkbox('Trazar un histograma')
+
+if hist_checkbox:
+
+    st.write(
+        'Creación de un histograma')
+
+    fig = px.histogram(linea_2, x="estacion", y='afluencia',
+                       labels={
+                           "estacion": "Estación",
+                           "afluencia": "Afluencia"
+                       }, title="Afluencia por estación")
+
+    st.plotly_chart(fig, use_container_width=True)
+
+scatter_checkbox = st.checkbox('Trazar un gráfico de dispersión')
+
+if scatter_checkbox:
+    st.write(
+        'Creación de un gráfico de dispersión')
+    fig = px.scatter(linea_2, x="estacion", y="afluencia", color="tipo_pago",
+                     labels={"estacion": "Estación",
+                             "afluencia": "Afluencia",
+                             "tipo_pago": "Tipo de Pago"},
+                     title="Tipo de pago por estación")
+    st.plotly_chart(fig, use_container_width=True)
+
+bar_checkbox = st.checkbox('Trazar un gráfico de barras')
+
+if bar_checkbox:
+    st.write(
+        'Creación de un gráfico de barras')
+    fig = px.bar(linea_2, x="estacion", y="afluencia", color="tipo_pago",
+                 labels={"estacion": "Estación",
+                         "afluencia": "Afluencia",
+                         "tipo_pago": "Tipo de Pago"},
+                 title="Tipo de pago por estación")
+    st.plotly_chart(fig, use_container_width=True)
+
+st.subheader('Línea 3', divider="green")
+
+hist_checkbox = st.checkbox('Trazar un histograma')
+
+if hist_checkbox:
+
+    st.write(
+        'Creación de un histograma')
+
+    fig = px.histogram(linea_3, x="estacion", y='afluencia',
+                       labels={
+                           "estacion": "Estación",
+                           "afluencia": "Afluencia"
+                       }, title="Afluencia por estación")
+
+    st.plotly_chart(fig, use_container_width=True)
+
+scatter_checkbox = st.checkbox('Trazar un gráfico de dispersión')
+
+if scatter_checkbox:
+    st.write(
+        'Creación de un gráfico de dispersión')
+    fig = px.scatter(linea_3, x="estacion", y="afluencia", color="tipo_pago",
+                     labels={"estacion": "Estación",
+                             "afluencia": "Afluencia",
+                             "tipo_pago": "Tipo de Pago"},
+                     title="Tipo de pago por estación")
+    st.plotly_chart(fig, use_container_width=True)
+
+bar_checkbox = st.checkbox('Trazar un gráfico de barras')
+
+if bar_checkbox:
+    st.write(
+        'Creación de un gráfico de barras')
+    fig = px.bar(linea_3, x="estacion", y="afluencia", color="tipo_pago",
+                 labels={"estacion": "Estación",
+                         "afluencia": "Afluencia",
+                         "tipo_pago": "Tipo de Pago"},
+                 title="Tipo de pago por estación")
+    st.plotly_chart(fig, use_container_width=True)
+
+st.subheader('Línea 4', divider="rainbow")
+
+hist_checkbox = st.checkbox('Trazar un histograma')
+
+if hist_checkbox:
+
+    st.write(
+        'Creación de un histograma')
+
+    fig = px.histogram(linea_4, x="estacion", y='afluencia',
+                       labels={
+                           "estacion": "Estación",
+                           "afluencia": "Afluencia"
+                       }, title="Afluencia por estación")
+
+    st.plotly_chart(fig, use_container_width=True)
+
+scatter_checkbox = st.checkbox('Trazar un gráfico de dispersión')
+
+if scatter_checkbox:
+    st.write(
+        'Creación de un gráfico de dispersión')
+    fig = px.scatter(linea_4, x="estacion", y="afluencia", color="tipo_pago",
+                     labels={"estacion": "Estación",
+                             "afluencia": "Afluencia",
+                             "tipo_pago": "Tipo de Pago"},
+                     title="Tipo de pago por estación")
+    st.plotly_chart(fig, use_container_width=True)
+
+bar_checkbox = st.checkbox('Trazar un gráfico de barras')
+
+if bar_checkbox:
+    st.write(
+        'Creación de un gráfico de barras')
+    fig = px.bar(linea_4, x="estacion", y="afluencia", color="tipo_pago",
+                 labels={"estacion": "Estación",
+                         "afluencia": "Afluencia",
+                         "tipo_pago": "Tipo de Pago"},
+                 title="Tipo de pago por estación")
+    st.plotly_chart(fig, use_container_width=True)
+
+st.subheader('Línea 5', divider="rainbow")
+
+hist_checkbox = st.checkbox('Trazar un histograma')
+
+if hist_checkbox:
+
+    st.write(
+        'Creación de un histograma')
+
+    fig = px.histogram(linea_5, x="estacion", y='afluencia',
+                       labels={
+                           "estacion": "Estación",
+                           "afluencia": "Afluencia"
+                       }, title="Afluencia por estación")
+
+    st.plotly_chart(fig, use_container_width=True)
+
+scatter_checkbox = st.checkbox('Trazar un gráfico de dispersión')
+
+if scatter_checkbox:
+    st.write(
+        'Creación de un gráfico de dispersión')
+    fig = px.scatter(linea_5, x="estacion", y="afluencia", color="tipo_pago",
+                     labels={"estacion": "Estación",
+                             "afluencia": "Afluencia",
+                             "tipo_pago": "Tipo de Pago"},
+                     title="Tipo de pago por estación")
+    st.plotly_chart(fig, use_container_width=True)
+
+bar_checkbox = st.checkbox('Trazar un gráfico de barras')
+
+if bar_checkbox:
+    st.write(
+        'Creación de un gráfico de barras')
+    fig = px.bar(linea_5, x="estacion", y="afluencia", color="tipo_pago",
+                 labels={"estacion": "Estación",
+                         "afluencia": "Afluencia",
+                         "tipo_pago": "Tipo de Pago"},
+                 title="Tipo de pago por estación")
+    st.plotly_chart(fig, use_container_width=True)
+
+st.subheader('Línea 6', divider="red")
+
+hist_checkbox = st.checkbox('Trazar un histograma')
+
+if hist_checkbox:
+
+    st.write(
+        'Creación de un histograma')
+
+    fig = px.histogram(linea_6, x="estacion", y='afluencia',
+                       labels={
+                           "estacion": "Estación",
+                           "afluencia": "Afluencia"
+                       }, title="Afluencia por estación")
+
+    st.plotly_chart(fig, use_container_width=True)
+
+scatter_checkbox = st.checkbox('Trazar un gráfico de dispersión')
+
+if scatter_checkbox:
+    st.write(
+        'Creación de un gráfico de dispersión')
+    fig = px.scatter(linea_6, x="estacion", y="afluencia", color="tipo_pago",
+                     labels={"estacion": "Estación",
+                             "afluencia": "Afluencia",
+                             "tipo_pago": "Tipo de Pago"},
+                     title="Tipo de pago por estación")
+    st.plotly_chart(fig, use_container_width=True)
+
+bar_checkbox = st.checkbox('Trazar un gráfico de barras')
+
+if bar_checkbox:
+    st.write(
+        'Creación de un gráfico de barras')
+    fig = px.bar(linea_6, x="estacion", y="afluencia", color="tipo_pago",
+                 labels={"estacion": "Estación",
+                         "afluencia": "Afluencia",
+                         "tipo_pago": "Tipo de Pago"},
+                 title="Tipo de pago por estación")
+    st.plotly_chart(fig, use_container_width=True)
+
+st.subheader('Línea 7', divider="orange")
+
+hist_checkbox = st.checkbox('Trazar un histograma')
+
+if hist_checkbox:
+
+    st.write(
+        'Creación de un histograma')
+
+    fig = px.histogram(linea_7, x="estacion", y='afluencia',
+                       labels={
+                           "estacion": "Estación",
+                           "afluencia": "Afluencia"
+                       }, title="Afluencia por estación")
+
+    st.plotly_chart(fig, use_container_width=True)
+
+scatter_checkbox = st.checkbox('Trazar un gráfico de dispersión')
+
+if scatter_checkbox:
+    st.write(
+        'Creación de un gráfico de dispersión')
+    fig = px.scatter(linea_7, x="estacion", y="afluencia", color="tipo_pago",
+                     labels={"estacion": "Estación",
+                             "afluencia": "Afluencia",
+                             "tipo_pago": "Tipo de Pago"},
+                     title="Tipo de pago por estación")
+    st.plotly_chart(fig, use_container_width=True)
+
+bar_checkbox = st.checkbox('Trazar un gráfico de barras')
+
+if bar_checkbox:
+    st.write(
+        'Creación de un gráfico de barras')
+    fig = px.bar(linea_7, x="estacion", y="afluencia", color="tipo_pago",
+                 labels={"estacion": "Estación",
+                         "afluencia": "Afluencia",
+                         "tipo_pago": "Tipo de Pago"},
+                 title="Tipo de pago por estación")
+    st.plotly_chart(fig, use_container_width=True)
+
+st.subheader('Línea 8', divider="green")
+
+hist_checkbox = st.checkbox('Trazar un histograma')
+
+if hist_checkbox:
+
+    st.write(
+        'Creación de un histograma')
+
+    fig = px.histogram(linea_8, x="estacion", y='afluencia',
+                       labels={
+                           "estacion": "Estación",
+                           "afluencia": "Afluencia"
+                       }, title="Afluencia por estación")
+
+    st.plotly_chart(fig, use_container_width=True)
+
+scatter_checkbox = st.checkbox('Trazar un gráfico de dispersión')
+
+if scatter_checkbox:
+    st.write(
+        'Creación de un gráfico de dispersión')
+    fig = px.scatter(linea_8, x="estacion", y="afluencia", color="tipo_pago",
+                     labels={"estacion": "Estación",
+                             "afluencia": "Afluencia",
+                             "tipo_pago": "Tipo de Pago"},
+                     title="Tipo de pago por estación")
+    st.plotly_chart(fig, use_container_width=True)
+
+bar_checkbox = st.checkbox('Trazar un gráfico de barras')
+
+if bar_checkbox:
+    st.write(
+        'Creación de un gráfico de barras')
+    fig = px.bar(linea_8, x="estacion", y="afluencia", color="tipo_pago",
+                 labels={"estacion": "Estación",
+                         "afluencia": "Afluencia",
+                         "tipo_pago": "Tipo de Pago"},
+                 title="Tipo de pago por estación")
+    st.plotly_chart(fig, use_container_width=True)
+
+st.subheader('Línea 9', divider="rainbow")
+
+hist_checkbox = st.checkbox('Trazar un histograma')
+
+if hist_checkbox:
+
+    st.write(
+        'Creación de un histograma')
+
+    fig = px.histogram(linea_9, x="estacion", y='afluencia',
+                       labels={
+                           "estacion": "Estación",
+                           "afluencia": "Afluencia"
+                       }, title="Afluencia por estación")
+
+    st.plotly_chart(fig, use_container_width=True)
+
+scatter_checkbox = st.checkbox('Trazar un gráfico de dispersión')
+
+if scatter_checkbox:
+    st.write(
+        'Creación de un gráfico de dispersión')
+    fig = px.scatter(linea_9, x="estacion", y="afluencia", color="tipo_pago",
+                     labels={"estacion": "Estación",
+                             "afluencia": "Afluencia",
+                             "tipo_pago": "Tipo de Pago"},
+                     title="Tipo de pago por estación")
+    st.plotly_chart(fig, use_container_width=True)
+
+bar_checkbox = st.checkbox('Trazar un gráfico de barras')
+
+if bar_checkbox:
+    st.write(
+        'Creación de un gráfico de barras')
+    fig = px.bar(linea_9, x="estacion", y="afluencia", color="tipo_pago",
+                 labels={"estacion": "Estación",
+                         "afluencia": "Afluencia",
+                         "tipo_pago": "Tipo de Pago"},
+                 title="Tipo de pago por estación")
+    st.plotly_chart(fig, use_container_width=True)
+
+st.subheader('Línea A', divider="violet")
+
+hist_checkbox = st.checkbox('Trazar un histograma')
+
+if hist_checkbox:
+
+    st.write(
+        'Creación de un histograma')
 
     fig = px.histogram(linea_a, x="estacion", y='afluencia',
                        labels={
@@ -26,7 +411,7 @@ scatter_checkbox = st.checkbox('Trazar un gráfico de dispersión')
 
 if scatter_checkbox:
     st.write(
-        'Creación de un gráfico de dispersión para el conjunto de datos del metro en Ciudad de México')
+        'Creación de un gráfico de dispersión')
     fig = px.scatter(linea_a, x="estacion", y="afluencia", color="tipo_pago",
                      labels={"estacion": "Estación",
                              "afluencia": "Afluencia",
@@ -38,8 +423,90 @@ bar_checkbox = st.checkbox('Trazar un gráfico de barras')
 
 if bar_checkbox:
     st.write(
-        'Creación de un gráfico de barras para el conjunto de datos del metro en Ciudad de México')
+        'Creación de un gráfico de barras')
     fig = px.bar(linea_a, x="estacion", y="afluencia", color="tipo_pago",
+                 labels={"estacion": "Estación",
+                         "afluencia": "Afluencia",
+                         "tipo_pago": "Tipo de Pago"},
+                 title="Tipo de pago por estación")
+    st.plotly_chart(fig, use_container_width=True)
+
+st.subheader('Línea B', divider="grey")
+
+hist_checkbox = st.checkbox('Trazar un histograma')
+
+if hist_checkbox:
+
+    st.write(
+        'Creación de un histograma')
+
+    fig = px.histogram(linea_b, x="estacion", y='afluencia',
+                       labels={
+                           "estacion": "Estación",
+                           "afluencia": "Afluencia"
+                       }, title="Afluencia por estación")
+
+    st.plotly_chart(fig, use_container_width=True)
+
+scatter_checkbox = st.checkbox('Trazar un gráfico de dispersión')
+
+if scatter_checkbox:
+    st.write(
+        'Creación de un gráfico de dispersión')
+    fig = px.scatter(linea_b, x="estacion", y="afluencia", color="tipo_pago",
+                     labels={"estacion": "Estación",
+                             "afluencia": "Afluencia",
+                             "tipo_pago": "Tipo de Pago"},
+                     title="Tipo de pago por estación")
+    st.plotly_chart(fig, use_container_width=True)
+
+bar_checkbox = st.checkbox('Trazar un gráfico de barras')
+
+if bar_checkbox:
+    st.write(
+        'Creación de un gráfico de barras')
+    fig = px.bar(linea_b, x="estacion", y="afluencia", color="tipo_pago",
+                 labels={"estacion": "Estación",
+                         "afluencia": "Afluencia",
+                         "tipo_pago": "Tipo de Pago"},
+                 title="Tipo de pago por estación")
+    st.plotly_chart(fig, use_container_width=True)
+
+st.subheader('Línea 12', divider="rainbow")
+
+hist_checkbox = st.checkbox('Trazar un histograma')
+
+if hist_checkbox:
+
+    st.write(
+        'Creación de un histograma')
+
+    fig = px.histogram(linea_12, x="estacion", y='afluencia',
+                       labels={
+                           "estacion": "Estación",
+                           "afluencia": "Afluencia"
+                       }, title="Afluencia por estación")
+
+    st.plotly_chart(fig, use_container_width=True)
+
+scatter_checkbox = st.checkbox('Trazar un gráfico de dispersión')
+
+if scatter_checkbox:
+    st.write(
+        'Creación de un gráfico de dispersión')
+    fig = px.scatter(linea_12, x="estacion", y="afluencia", color="tipo_pago",
+                     labels={"estacion": "Estación",
+                             "afluencia": "Afluencia",
+                             "tipo_pago": "Tipo de Pago"},
+                     title="Tipo de pago por estación")
+    st.plotly_chart(fig, use_container_width=True)
+
+bar_checkbox = st.checkbox('Trazar un gráfico de barras')
+
+if bar_checkbox:
+    st.write(
+        'Creación de un gráfico de barras')
+    fig = px.bar(linea_12, x="estacion", y="afluencia", color="tipo_pago",
                  labels={"estacion": "Estación",
                          "afluencia": "Afluencia",
                          "tipo_pago": "Tipo de Pago"},
