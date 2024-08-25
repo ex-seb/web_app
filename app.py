@@ -21,7 +21,7 @@ linea_12 = df[df['linea'] == ('Linea 12')]
 st.header('Afluencia en STC Metro.')
 st.header('Ciudad de México, Junio 2024.')
 
-st.subheader('Línea 1', divider="pink")
+st.subheader('Línea 1', divider="rainbow")
 
 hist_checkbox = st.checkbox('Trazar un histograma')
 
