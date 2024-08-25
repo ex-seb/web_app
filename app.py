@@ -5,7 +5,7 @@ import streamlit as st
 df = pd.read_csv("metro.csv")
 linea_a = df[df['linea'].str.contains('Linea A')]
 
-st.header('Uso de la línea A del Sistema de Transporte Colectivo Metro en Ciudad de México durante Junio de 2024')
+st.header('Afluencia de STC Metro en Ciudad de México durante Junio de 2024')
 
 hist_checkbox = st.checkbox('Trazar un histograma')
 
