@@ -23,9 +23,9 @@ st.header('Ciudad de México, Junio 2024.')
 
 st.subheader('Línea 1', divider="rainbow")
 
-hist_checkbox = st.checkbox('Trazar un histograma')
+hist_checkbox_1 = st.checkbox('Trazar un histograma')
 
-if hist_checkbox:
+if hist_checkbox_1:
 
     st.write(
         'Creación de un histograma')
@@ -38,9 +38,9 @@ if hist_checkbox:
 
     st.plotly_chart(fig, use_container_width=True)
 
-scatter_checkbox = st.checkbox('Trazar un gráfico de dispersión')
+scatter_checkbox_1 = st.checkbox('Trazar un gráfico de dispersión')
 
-if scatter_checkbox:
+if scatter_checkbox_1:
     st.write(
         'Creación de un gráfico de dispersión')
     fig = px.scatter(linea_1, x="estacion", y="afluencia", color="tipo_pago",
@@ -50,9 +50,9 @@ if scatter_checkbox:
                      title="Tipo de pago por estación")
     st.plotly_chart(fig, use_container_width=True)
 
-bar_checkbox = st.checkbox('Trazar un gráfico de barras')
+bar_checkbox_1 = st.checkbox('Trazar un gráfico de barras')
 
-if bar_checkbox:
+if bar_checkbox_1:
     st.write(
         'Creación de un gráfico de barras')
     fig = px.bar(linea_1, x="estacion", y="afluencia", color="tipo_pago",
@@ -64,9 +64,9 @@ if bar_checkbox:
 
 st.subheader('Línea 2', divider="blue")
 
-hist_checkbox = st.checkbox('Trazar un histograma')
+hist_checkbox_2 = st.checkbox('Trazar un histograma')
 
-if hist_checkbox:
+if hist_checkbox_2:
 
     st.write(
         'Creación de un histograma')
@@ -79,9 +79,9 @@ if hist_checkbox:
 
     st.plotly_chart(fig, use_container_width=True)
 
-scatter_checkbox = st.checkbox('Trazar un gráfico de dispersión')
+scatter_checkbox_2 = st.checkbox('Trazar un gráfico de dispersión')
 
-if scatter_checkbox:
+if scatter_checkbox_2:
     st.write(
         'Creación de un gráfico de dispersión')
     fig = px.scatter(linea_2, x="estacion", y="afluencia", color="tipo_pago",
@@ -91,9 +91,9 @@ if scatter_checkbox:
                      title="Tipo de pago por estación")
     st.plotly_chart(fig, use_container_width=True)
 
-bar_checkbox = st.checkbox('Trazar un gráfico de barras')
+bar_checkbox_2 = st.checkbox('Trazar un gráfico de barras')
 
-if bar_checkbox:
+if bar_checkbox_2:
     st.write(
         'Creación de un gráfico de barras')
     fig = px.bar(linea_2, x="estacion", y="afluencia", color="tipo_pago",
@@ -105,9 +105,9 @@ if bar_checkbox:
 
 st.subheader('Línea 3', divider="green")
 
-hist_checkbox = st.checkbox('Trazar un histograma')
+hist_checkbox_3 = st.checkbox('Trazar un histograma')
 
-if hist_checkbox:
+if hist_checkbox_3:
 
     st.write(
         'Creación de un histograma')
@@ -120,9 +120,9 @@ if hist_checkbox:
 
     st.plotly_chart(fig, use_container_width=True)
 
-scatter_checkbox = st.checkbox('Trazar un gráfico de dispersión')
+scatter_checkbox_3 = st.checkbox('Trazar un gráfico de dispersión')
 
-if scatter_checkbox:
+if scatter_checkbox_3:
     st.write(
         'Creación de un gráfico de dispersión')
     fig = px.scatter(linea_3, x="estacion", y="afluencia", color="tipo_pago",
@@ -132,9 +132,9 @@ if scatter_checkbox:
                      title="Tipo de pago por estación")
     st.plotly_chart(fig, use_container_width=True)
 
-bar_checkbox = st.checkbox('Trazar un gráfico de barras')
+bar_checkbox_3 = st.checkbox('Trazar un gráfico de barras')
 
-if bar_checkbox:
+if bar_checkbox_3:
     st.write(
         'Creación de un gráfico de barras')
     fig = px.bar(linea_3, x="estacion", y="afluencia", color="tipo_pago",
@@ -146,9 +146,9 @@ if bar_checkbox:
 
 st.subheader('Línea 4', divider="rainbow")
 
-hist_checkbox = st.checkbox('Trazar un histograma')
+hist_checkbox_4 = st.checkbox('Trazar un histograma')
 
-if hist_checkbox:
+if hist_checkbox_4:
 
     st.write(
         'Creación de un histograma')
@@ -161,9 +161,9 @@ if hist_checkbox:
 
     st.plotly_chart(fig, use_container_width=True)
 
-scatter_checkbox = st.checkbox('Trazar un gráfico de dispersión')
+scatter_checkbox_4 = st.checkbox('Trazar un gráfico de dispersión')
 
-if scatter_checkbox:
+if scatter_checkbox_4:
     st.write(
         'Creación de un gráfico de dispersión')
     fig = px.scatter(linea_4, x="estacion", y="afluencia", color="tipo_pago",
@@ -173,9 +173,9 @@ if scatter_checkbox:
                      title="Tipo de pago por estación")
     st.plotly_chart(fig, use_container_width=True)
 
-bar_checkbox = st.checkbox('Trazar un gráfico de barras')
+bar_checkbox_4 = st.checkbox('Trazar un gráfico de barras')
 
-if bar_checkbox:
+if bar_checkbox_4:
     st.write(
         'Creación de un gráfico de barras')
     fig = px.bar(linea_4, x="estacion", y="afluencia", color="tipo_pago",
@@ -187,9 +187,9 @@ if bar_checkbox:
 
 st.subheader('Línea 5', divider="rainbow")
 
-hist_checkbox = st.checkbox('Trazar un histograma')
+hist_checkbox_5 = st.checkbox('Trazar un histograma')
 
-if hist_checkbox:
+if hist_checkbox_5:
 
     st.write(
         'Creación de un histograma')
@@ -202,9 +202,9 @@ if hist_checkbox:
 
     st.plotly_chart(fig, use_container_width=True)
 
-scatter_checkbox = st.checkbox('Trazar un gráfico de dispersión')
+scatter_checkbox_5 = st.checkbox('Trazar un gráfico de dispersión')
 
-if scatter_checkbox:
+if scatter_checkbox_5:
     st.write(
         'Creación de un gráfico de dispersión')
     fig = px.scatter(linea_5, x="estacion", y="afluencia", color="tipo_pago",
@@ -214,9 +214,9 @@ if scatter_checkbox:
                      title="Tipo de pago por estación")
     st.plotly_chart(fig, use_container_width=True)
 
-bar_checkbox = st.checkbox('Trazar un gráfico de barras')
+bar_checkbox_5 = st.checkbox('Trazar un gráfico de barras')
 
-if bar_checkbox:
+if bar_checkbox_5:
     st.write(
         'Creación de un gráfico de barras')
     fig = px.bar(linea_5, x="estacion", y="afluencia", color="tipo_pago",
@@ -228,9 +228,9 @@ if bar_checkbox:
 
 st.subheader('Línea 6', divider="red")
 
-hist_checkbox = st.checkbox('Trazar un histograma')
+hist_checkbox_6 = st.checkbox('Trazar un histograma')
 
-if hist_checkbox:
+if hist_checkbox_6:
 
     st.write(
         'Creación de un histograma')
@@ -243,9 +243,9 @@ if hist_checkbox:
 
     st.plotly_chart(fig, use_container_width=True)
 
-scatter_checkbox = st.checkbox('Trazar un gráfico de dispersión')
+scatter_checkbox_6 = st.checkbox('Trazar un gráfico de dispersión')
 
-if scatter_checkbox:
+if scatter_checkbox_6:
     st.write(
         'Creación de un gráfico de dispersión')
     fig = px.scatter(linea_6, x="estacion", y="afluencia", color="tipo_pago",
@@ -255,9 +255,9 @@ if scatter_checkbox:
                      title="Tipo de pago por estación")
     st.plotly_chart(fig, use_container_width=True)
 
-bar_checkbox = st.checkbox('Trazar un gráfico de barras')
+bar_checkbox_6 = st.checkbox('Trazar un gráfico de barras')
 
-if bar_checkbox:
+if bar_checkbox_6:
     st.write(
         'Creación de un gráfico de barras')
     fig = px.bar(linea_6, x="estacion", y="afluencia", color="tipo_pago",
@@ -269,9 +269,9 @@ if bar_checkbox:
 
 st.subheader('Línea 7', divider="orange")
 
-hist_checkbox = st.checkbox('Trazar un histograma')
+hist_checkbox_7 = st.checkbox('Trazar un histograma')
 
-if hist_checkbox:
+if hist_checkbox_7:
 
     st.write(
         'Creación de un histograma')
@@ -284,9 +284,9 @@ if hist_checkbox:
 
     st.plotly_chart(fig, use_container_width=True)
 
-scatter_checkbox = st.checkbox('Trazar un gráfico de dispersión')
+scatter_checkbox_7 = st.checkbox('Trazar un gráfico de dispersión')
 
-if scatter_checkbox:
+if scatter_checkbox_7:
     st.write(
         'Creación de un gráfico de dispersión')
     fig = px.scatter(linea_7, x="estacion", y="afluencia", color="tipo_pago",
@@ -296,9 +296,9 @@ if scatter_checkbox:
                      title="Tipo de pago por estación")
     st.plotly_chart(fig, use_container_width=True)
 
-bar_checkbox = st.checkbox('Trazar un gráfico de barras')
+bar_checkbox_7 = st.checkbox('Trazar un gráfico de barras')
 
-if bar_checkbox:
+if bar_checkbox_7:
     st.write(
         'Creación de un gráfico de barras')
     fig = px.bar(linea_7, x="estacion", y="afluencia", color="tipo_pago",
@@ -310,9 +310,9 @@ if bar_checkbox:
 
 st.subheader('Línea 8', divider="green")
 
-hist_checkbox = st.checkbox('Trazar un histograma')
+hist_checkbox_8 = st.checkbox('Trazar un histograma')
 
-if hist_checkbox:
+if hist_checkbox_8:
 
     st.write(
         'Creación de un histograma')
@@ -325,9 +325,9 @@ if hist_checkbox:
 
     st.plotly_chart(fig, use_container_width=True)
 
-scatter_checkbox = st.checkbox('Trazar un gráfico de dispersión')
+scatter_checkbox_8 = st.checkbox('Trazar un gráfico de dispersión')
 
-if scatter_checkbox:
+if scatter_checkbox_8:
     st.write(
         'Creación de un gráfico de dispersión')
     fig = px.scatter(linea_8, x="estacion", y="afluencia", color="tipo_pago",
@@ -337,9 +337,9 @@ if scatter_checkbox:
                      title="Tipo de pago por estación")
     st.plotly_chart(fig, use_container_width=True)
 
-bar_checkbox = st.checkbox('Trazar un gráfico de barras')
+bar_checkbox_8 = st.checkbox('Trazar un gráfico de barras')
 
-if bar_checkbox:
+if bar_checkbox_8:
     st.write(
         'Creación de un gráfico de barras')
     fig = px.bar(linea_8, x="estacion", y="afluencia", color="tipo_pago",
@@ -351,9 +351,9 @@ if bar_checkbox:
 
 st.subheader('Línea 9', divider="rainbow")
 
-hist_checkbox = st.checkbox('Trazar un histograma')
+hist_checkbox_9 = st.checkbox('Trazar un histograma')
 
-if hist_checkbox:
+if hist_checkbox_9:
 
     st.write(
         'Creación de un histograma')
@@ -366,9 +366,9 @@ if hist_checkbox:
 
     st.plotly_chart(fig, use_container_width=True)
 
-scatter_checkbox = st.checkbox('Trazar un gráfico de dispersión')
+scatter_checkbox_9 = st.checkbox('Trazar un gráfico de dispersión')
 
-if scatter_checkbox:
+if scatter_checkbox_9:
     st.write(
         'Creación de un gráfico de dispersión')
     fig = px.scatter(linea_9, x="estacion", y="afluencia", color="tipo_pago",
@@ -378,9 +378,9 @@ if scatter_checkbox:
                      title="Tipo de pago por estación")
     st.plotly_chart(fig, use_container_width=True)
 
-bar_checkbox = st.checkbox('Trazar un gráfico de barras')
+bar_checkbox_9 = st.checkbox('Trazar un gráfico de barras')
 
-if bar_checkbox:
+if bar_checkbox_9:
     st.write(
         'Creación de un gráfico de barras')
     fig = px.bar(linea_9, x="estacion", y="afluencia", color="tipo_pago",
@@ -392,9 +392,9 @@ if bar_checkbox:
 
 st.subheader('Línea A', divider="violet")
 
-hist_checkbox = st.checkbox('Trazar un histograma')
+hist_checkbox_a = st.checkbox('Trazar un histograma')
 
-if hist_checkbox:
+if hist_checkbox_a:
 
     st.write(
         'Creación de un histograma')
@@ -407,9 +407,9 @@ if hist_checkbox:
 
     st.plotly_chart(fig, use_container_width=True)
 
-scatter_checkbox = st.checkbox('Trazar un gráfico de dispersión')
+scatter_checkbox_a = st.checkbox('Trazar un gráfico de dispersión')
 
-if scatter_checkbox:
+if scatter_checkbox_a:
     st.write(
         'Creación de un gráfico de dispersión')
     fig = px.scatter(linea_a, x="estacion", y="afluencia", color="tipo_pago",
@@ -419,9 +419,9 @@ if scatter_checkbox:
                      title="Tipo de pago por estación")
     st.plotly_chart(fig, use_container_width=True)
 
-bar_checkbox = st.checkbox('Trazar un gráfico de barras')
+bar_checkbox_a = st.checkbox('Trazar un gráfico de barras')
 
-if bar_checkbox:
+if bar_checkbox_a:
     st.write(
         'Creación de un gráfico de barras')
     fig = px.bar(linea_a, x="estacion", y="afluencia", color="tipo_pago",
@@ -433,9 +433,9 @@ if bar_checkbox:
 
 st.subheader('Línea B', divider="grey")
 
-hist_checkbox = st.checkbox('Trazar un histograma')
+hist_checkbox_b = st.checkbox('Trazar un histograma')
 
-if hist_checkbox:
+if hist_checkbox_b:
 
     st.write(
         'Creación de un histograma')
@@ -448,9 +448,9 @@ if hist_checkbox:
 
     st.plotly_chart(fig, use_container_width=True)
 
-scatter_checkbox = st.checkbox('Trazar un gráfico de dispersión')
+scatter_checkbox_b = st.checkbox('Trazar un gráfico de dispersión')
 
-if scatter_checkbox:
+if scatter_checkbox_b:
     st.write(
         'Creación de un gráfico de dispersión')
     fig = px.scatter(linea_b, x="estacion", y="afluencia", color="tipo_pago",
@@ -460,9 +460,9 @@ if scatter_checkbox:
                      title="Tipo de pago por estación")
     st.plotly_chart(fig, use_container_width=True)
 
-bar_checkbox = st.checkbox('Trazar un gráfico de barras')
+bar_checkbox_b = st.checkbox('Trazar un gráfico de barras')
 
-if bar_checkbox:
+if bar_checkbox_b:
     st.write(
         'Creación de un gráfico de barras')
     fig = px.bar(linea_b, x="estacion", y="afluencia", color="tipo_pago",
@@ -474,9 +474,9 @@ if bar_checkbox:
 
 st.subheader('Línea 12', divider="rainbow")
 
-hist_checkbox = st.checkbox('Trazar un histograma')
+hist_checkbox_12 = st.checkbox('Trazar un histograma')
 
-if hist_checkbox:
+if hist_checkbox_12:
 
     st.write(
         'Creación de un histograma')
@@ -489,9 +489,9 @@ if hist_checkbox:
 
     st.plotly_chart(fig, use_container_width=True)
 
-scatter_checkbox = st.checkbox('Trazar un gráfico de dispersión')
+scatter_checkbox_12 = st.checkbox('Trazar un gráfico de dispersión')
 
-if scatter_checkbox:
+if scatter_checkbox_12:
     st.write(
         'Creación de un gráfico de dispersión')
     fig = px.scatter(linea_12, x="estacion", y="afluencia", color="tipo_pago",
@@ -501,9 +501,9 @@ if scatter_checkbox:
                      title="Tipo de pago por estación")
     st.plotly_chart(fig, use_container_width=True)
 
-bar_checkbox = st.checkbox('Trazar un gráfico de barras')
+bar_checkbox_12 = st.checkbox('Trazar un gráfico de barras')
 
-if bar_checkbox:
+if bar_checkbox_12:
     st.write(
         'Creación de un gráfico de barras')
     fig = px.bar(linea_12, x="estacion", y="afluencia", color="tipo_pago",
